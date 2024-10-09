@@ -17,6 +17,7 @@ TAO holders can delegate any amount of their stake to a subnet validator through
 Minimum required stake for nominators is 0.1 TAO.
 :::
 
+
 Delegation on the Bittensor network works like this:
 
 - A TAO holder, i.e., a delegator, also called a **nominator**, stakes with a subnet validator, making this subnet validator a **delegate** of the nominator. This supports the delegate as the delegate's effective stake becomes larger, increasing the delegate's impact on the network.
@@ -185,4 +186,10 @@ owner            5GTMADbd...  τ120,999.9999    τ0.000   1      τ0.000000000  
 Total delegated Tao: τ120,999.999999000
 ```
 
+:::tip Getting an error when trying to stake or unstake?
+Stake and unstake operations are limited to one (1) stake OR unstake operation every 360 blocks, which is approximately 1.2 hours.  If you have recently executed a stake or unstake operation and are receiving an error, this is likely why.  Simply try again later.
+:::
 
+:::tip Changes to staking balance
+Once staked, rewards will autocompound every 7200 blocks (approximately 24 hours).
+:::
