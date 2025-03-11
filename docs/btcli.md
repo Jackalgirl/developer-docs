@@ -4961,6 +4961,8 @@ Allows users to change their delegate take percentage.
 This command can be used to update the delegate takes. To run the command, the user must have a configured wallet with both hotkey and coldkey.
 The command makes sure the new take value is within 0-18% range.
 
+:::note This command is rate-limited, and may only be invoked once per `216000` blocks, which is 30 days at a 12-second block time. :::
+
 **Example:**
 ```
 btcli sudo set-take --wallet-name my_wallet --wallet-hotkey my_hotkey
